@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetFileSystem", "MultitargetFileSystem\MultitargetFileSystem.csproj", "{8C322F5E-739E-4F42-93B5-ABF8714EA00C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetFileSystem.iOS", "MultitargetFileSystem.iOS\MultitargetFileSystem.iOS.csproj", "{D7FCB267-5901-406C-90F3-D3E8A0BC2EFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{826412CA-E0FE-40DC-AB27-D8F1F7960435}"
+	ProjectSection(SolutionItems) = preProject
+		MultitargetFileSystem.nuspec = MultitargetFileSystem.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultitargetFileSystem.Droid", "MultitargetFileSystem.Droid\MultitargetFileSystem.Droid.csproj", "{EE56A4A0-ABAF-41C3-9AF1-8C6572F066B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C322F5E-739E-4F42-93B5-ABF8714EA00C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C322F5E-739E-4F42-93B5-ABF8714EA00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C322F5E-739E-4F42-93B5-ABF8714EA00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C322F5E-739E-4F42-93B5-ABF8714EA00C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FCB267-5901-406C-90F3-D3E8A0BC2EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FCB267-5901-406C-90F3-D3E8A0BC2EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FCB267-5901-406C-90F3-D3E8A0BC2EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FCB267-5901-406C-90F3-D3E8A0BC2EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE56A4A0-ABAF-41C3-9AF1-8C6572F066B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE56A4A0-ABAF-41C3-9AF1-8C6572F066B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE56A4A0-ABAF-41C3-9AF1-8C6572F066B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE56A4A0-ABAF-41C3-9AF1-8C6572F066B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
