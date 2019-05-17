@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements -->
+        <id>MultitargetFileSystem</id>
+        <version>1.0-pre1</version>
+        <description>Sample</description>
+        <authors>Jacob Maristany</authors>
+        
+        <dependencies>
+            <group targetFramework="Xamarin.iOS1.0">
+                <dependency id="Serilog" version="2.8.0" />
+            </group>
+        </dependencies>
+        
+    </metadata>
+    
+    <files>
+        
+        <!-- netstandard 2 -->
+        <file src="MultitargetFileSystem/bin/Release/netstandard2.0/MultitargetFileSystem.dll" target="lib/netstandard2.0/MultitargetFileSystem.dll" />
+        
+        <!-- iOS -->
+        <file src="MultitargetFileSystem.iOS/bin/Release/MultitargetFileSystem.dll" target="lib/Xamarin.iOS10/MultitargetFileSystem.dll" />
+        <file src="MultitargetFileSystem.iOS/bin/Release/MultitargetFileSystem.iOS.dll" target="lib/Xamarin.iOS10/MultitargetFileSystem.iOS.dll" />
+        
+        <!-- Android -->
+        <file src="MultitargetFileSystem.Droid/bin/Release/MultitargetFileSystem.dll" target="lib/MonoAndroid80/MultitargetFileSystem.dll" />
+        <file src="MultitargetFileSystem.Droid/bin/Release/MultitargetFileSystem.Droid.dll" target="lib/MonoAndroid80/MultitargetFileSystem.Droid.dll" />
+    
+    </files>
+    
+</package>

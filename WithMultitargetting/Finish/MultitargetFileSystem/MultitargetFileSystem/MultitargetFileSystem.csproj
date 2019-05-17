@@ -1,0 +1,37 @@
+<Project Sdk="MSBuild.Sdk.Extras/2.0.24">
+
+  <PropertyGroup>
+    <TargetFrameworks Condition=" $(OS) != 'Windows_NT' ">netstandard2.0;Xamarin.iOS10;MonoAndroid80</TargetFrameworks>
+    <TargetFrameworks Condition=" $(OS) == 'Windows_NT' ">netstandard2.0;MonoAndroid80;uap10.0.16299</TargetFrameworks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+     <!-- Nuget config -->
+    <PackageId>MultitargetFileSystem</PackageId>
+    <Description>Sample</Description>
+    <PackageVersion>1.0-pre1</PackageVersion>
+
+  </PropertyGroup>
+
+  <!-- Convention -->
+  <ItemGroup>
+    <Compile Include="**\*.shared.cs" />
+    <Compile Include="**\*.shared.*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+    <Compile Include="**\*.netstandard.cs" />
+    <Compile Include="**\*.netstandard.*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+    <Compile Include="**\*.android.cs" />
+    <Compile Include="**\*.android.*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+    <PackageReference Include="Serilog" Version="2.8.0" />
+    <Compile Include="**\*.ios.cs" />
+    <Compile Include="**\*.ios.*.cs" />
+  </ItemGroup>
+
+</Project>
